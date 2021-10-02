@@ -1,7 +1,6 @@
 # Личный проект «Шесть городов»
 
 * Студент: [Илья Родионов](https://up.htmlacademy.ru/react/8/user/1853961).
-* Студент: [Илья Родионов](https://up.htmlacademy.ru/react/8/user/1853961).
 * Наставник: [Белик Павел](https://htmlacademy.ru/profile/id84572).
 
 
