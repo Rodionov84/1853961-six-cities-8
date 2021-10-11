@@ -1,6 +1,8 @@
+import Logo from './modules/logo';
+
 function PropertyView(): JSX.Element {
   return (
-    <body>
+    <div>
       <div style={{display: 'none'}}>
         <svg xmlns='http://www.w3.org/2000/svg'>
           <symbol id='icon-arrow-select' viewBox='0 0 7 4'>
@@ -19,11 +21,7 @@ function PropertyView(): JSX.Element {
         <header className='header'>
           <div className='container'>
             <div className='header__wrapper'>
-              <div className='header__left'>
-                <a className='header__logo-link' href='main.html'>
-                  <img className='header__logo' src='../../../public/img/logo.svg' alt='6 cities logo' width='81' height='41' />
-                </a>
-              </div>
+              <Logo />
               <nav className='header__nav'>
                 <ul className='header__nav-list'>
                   <li className='header__nav-item user'>
@@ -34,7 +32,7 @@ function PropertyView(): JSX.Element {
                     </a>
                   </li>
                   <li className='header__nav-item'>
-                    <a className='header__nav-link' href='#'>
+                    <a className='header__nav-link' href={'login'}>
                       <span className='header__signout'>Sign out</span>
                     </a>
                   </li>
@@ -49,22 +47,22 @@ function PropertyView(): JSX.Element {
             <div className='property__gallery-container container'>
               <div className='property__gallery'>
                 <div className='property__image-wrapper'>
-                  <img className='property__image' src='../../../public/img/room.jpg' alt='Photo studio' />
+                  <img className='property__image' src='img/room.jpg' alt='Photo studio' />
                 </div>
                 <div className='property__image-wrapper'>
-                  <img className='property__image' src='../../../public/img/apartment-01.jpg' alt='Photo studio' />
+                  <img className='property__image' src='img/apartment-01.jpg' alt='Photo studio' />
                 </div>
                 <div className='property__image-wrapper'>
-                  <img className='property__image' src='../../../public/img/apartment-02.jpg' alt='Photo studio' />
+                  <img className='property__image' src='img/apartment-02.jpg' alt='Photo studio' />
                 </div>
                 <div className='property__image-wrapper'>
-                  <img className='property__image' src='../../../public/img/apartment-03.jpg' alt='Photo studio' />
+                  <img className='property__image' src='img/apartment-03.jpg' alt='Photo studio' />
                 </div>
                 <div className='property__image-wrapper'>
-                  <img className='property__image' src='../../../public/img/studio-01.jpg' alt='Photo studio' />
+                  <img className='property__image' src='img/studio-01.jpg' alt='Photo studio' />
                 </div>
                 <div className='property__image-wrapper'>
-                  <img className='property__image' src='../../../public/img/apartment-01.jpg' alt='Photo studio' />
+                  <img className='property__image' src='/img/apartment-01.jpg' alt='Photo studio' />
                 </div>
               </div>
             </div>
@@ -145,7 +143,7 @@ function PropertyView(): JSX.Element {
                   <h2 className='property__host-title'>Meet the host</h2>
                   <div className='property__host-user user'>
                     <div className='property__avatar-wrapper property__avatar-wrapper--pro user__avatar-wrapper'>
-                      <img className='property__avatar user__avatar' src='../../../public/img/avatar-angelina.jpg' width='74' height='74' alt='Host avatar'/>
+                      <img className='property__avatar user__avatar' src='img/avatar-angelina.jpg' width='74' height='74' alt='Host avatar'/>
                     </div>
                     <span className='property__user-name'>
                       Angelina
@@ -171,7 +169,7 @@ function PropertyView(): JSX.Element {
                     <li className='reviews__item'>
                       <div className='reviews__user user'>
                         <div className='reviews__avatar-wrapper user__avatar-wrapper'>
-                          <img className='reviews__avatar user__avatar' src='../../../public/img/avatar-max.jpg' width='54' height='54' alt='Reviews avatar' />
+                          <img className='reviews__avatar user__avatar' src='img/avatar-max.jpg' width='54' height='54' alt='Reviews avatar' />
                         </div>
                         <span className='reviews__user-name'>
                           Max
@@ -251,7 +249,7 @@ function PropertyView(): JSX.Element {
                 <article className='near-places__card place-card'>
                   <div className='near-places__image-wrapper place-card__image-wrapper'>
                     <a href='#'>
-                      <img className='place-card__image' src='../../../public/img/room.jpg' width='260' height='200' alt='Place image' />
+                      <img className='place-card__image' src='img/room.jpg' width='260' height='200' alt='Place image' />
                     </a>
                   </div>
                   <div className='place-card__info'>
@@ -283,7 +281,7 @@ function PropertyView(): JSX.Element {
                 <article className='near-places__card place-card'>
                   <div className='near-places__image-wrapper place-card__image-wrapper'>
                     <a href='#'>
-                      <img className='place-card__image' src='../../../public/img/apartment-02.jpg' width='260' height='200' alt='Place image' />
+                      <img className='place-card__image' src='img/apartment-02.jpg' width='260' height='200' alt='Place image' />
                     </a>
                   </div>
                   <div className='place-card__info'>
@@ -315,7 +313,7 @@ function PropertyView(): JSX.Element {
                 <article className='near-places__card place-card'>
                   <div className='near-places__image-wrapper place-card__image-wrapper'>
                     <a href='#'>
-                      <img className='place-card__image' src='../../../public/img/apartment-03.jpg' width='260' height='200' alt='Place image' />
+                      <img className='place-card__image' src='img/apartment-03.jpg' width='260' height='200' alt='Place image' />
                     </a>
                   </div>
                   <div className='place-card__info'>
@@ -348,7 +346,7 @@ function PropertyView(): JSX.Element {
           </div>
         </main>
       </div>
-    </body>
+    </div>
   );
 }
 

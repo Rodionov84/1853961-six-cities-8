@@ -1,6 +1,8 @@
+import Logo from './modules/logo';
+
 function LoginView(): JSX.Element  {
   return (
-    <body>
+    <div>
       <div style={{ display: 'none' }}>
         <svg xmlns='http://www.w3.org/2000/svg'>
           <symbol id='icon-arrow-select' viewBox='0 0 7 4'>
@@ -19,11 +21,7 @@ function LoginView(): JSX.Element  {
         <header className='header'>
           <div className='container'>
             <div className='header__wrapper'>
-              <div className='header__left'>
-                <a className='header__logo-link' href='main.html'>
-                  <img className='header__logo' src='../../../public/img/logo.svg' alt='6 cities logo' width='81' height='41' />
-                </a>
-              </div>
+              <Logo />
             </div>
           </div>
         </header>
@@ -54,7 +52,7 @@ function LoginView(): JSX.Element  {
           </div>
         </main>
       </div>
-    </body>
+    </div>
   );
 }
 
